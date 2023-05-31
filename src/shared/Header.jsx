@@ -5,7 +5,7 @@ import styles from './header.less';
 function HeaderComponent() {
   return (
     <header>
-      <h1 className={styles.example}>Reddit for our own 123</h1>
+      <h1 className={styles.example}>Reddit for our own</h1>
     </header>
   );
 }
