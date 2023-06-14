@@ -9,7 +9,7 @@ function AppComponent() {
   return (
     <Layout>
       <Header />
-      <Content>content</Content>
+      <Content>contents</Content>
     </Layout>
   );
 }
