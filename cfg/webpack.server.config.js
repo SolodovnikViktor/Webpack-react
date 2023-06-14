@@ -1,6 +1,7 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const NODE_ENV = process.env.NODE_ENV;
+const GLOBAL_CSS_REGEXP = /\.global\.css/;
 
 module.exports = {
   target: 'node',
@@ -19,6 +20,27 @@ module.exports = {
       {
         test: /\.[tj]sx?$/,
         use: ['ts-loader'],
+      },
+      {
+        test: /(\.css|\.less)$/,
+        use: [
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: '[name]__[local]--[hash:base64:5]',
+              },
+              onlyLocals: true,
+            },
+          },
+          'less-loader',
+        ],
+        exclude: GLOBAL_CSS_REGEXP,
+      },
+      {
+        test: GLOBAL_CSS_REGEXP,
+        use: ['css-loader'],
       },
     ],
   },
