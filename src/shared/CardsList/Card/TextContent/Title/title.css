@@ -23,10 +23,10 @@
 
 @media all and (min-width: 1024px) {
   .textContent {
-    flex-basis:      540px;
-    order:           1;
-    margin:          0 0 0 38px;
-    flex-flow:       column-reverse nowrap;
+    flex-basis: 540px;
+    order: 1;
+    margin: 0 0 0 38px;
+    flex-flow: column-reverse nowrap;
     justify-content: center;
   }
 
@@ -35,8 +35,8 @@
   }
 
   .title {
-    padding:     0 0 10px 0;
-    font-size:   20px;
+    padding: 0 0 10px 0;
+    font-size: 20px;
     line-height: 23px;
   }
 

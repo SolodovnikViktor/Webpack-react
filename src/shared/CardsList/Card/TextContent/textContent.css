@@ -18,7 +18,8 @@
   display: none;
 }
 
-.createdAt, .createdAt span {
+.createdAt,
+.createdAt span {
   color: var(--grey99);
 }
 
