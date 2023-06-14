@@ -1,13 +1,16 @@
 import React from 'react';
+import './main.global.css';
 import { hot } from 'react-hot-loader/root';
-import styles from './shared/header.less';
+import { Layout } from './shared/Layout';
+import { Header } from './shared/Header';
+import { Content } from './shared/Content/Content';
 
 function AppComponent() {
   return (
-    <header>
-      <h1>content</h1>
-      <h1 className={styles.example}>Reddit for our own</h1>
-    </header>
+    <Layout>
+      <Header />
+      <Content>content</Content>
+    </Layout>
   );
 }
 
