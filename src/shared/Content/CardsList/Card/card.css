@@ -24,6 +24,10 @@ button {
 .card:focus-within h2 a {
   color: var(--orange);
 }
+.card:hover,
+.card:focus-within {
+  outline: 1px solid var(--greyD9);
+}
 
 @media all and (min-width: 1024px) {
   .card {
@@ -51,3 +55,7 @@ button {
     outline: 1px solid var(--grey-demi-dark);
   }
 }
+
+/* .card {
+  padding: 0 60px;
+} */

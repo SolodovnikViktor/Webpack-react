@@ -8,7 +8,10 @@ export function TextContent() {
     <div className={styles.textContent}>
       <div className={styles.metaData}>
         <UserLink />
-        <span className={styles.createdAt}>4 часа назад</span>
+        <span className={styles.createdAt}>
+          <span className={styles.publishedLabel}>опубликовано </span>4 часа
+          назад
+        </span>
       </div>
       <Title />
     </div>
