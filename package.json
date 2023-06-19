@@ -6,12 +6,13 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "cross-env NODE_ENV=development node ./bin/dev.js",
+    "dev": "cross-env NODE_ENV=development CLIENT_ID=1R1PL6ynfjWyGwjI4yxsqA node ./bin/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Victor",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "express": "^4.18.2",
     "nodemon": "^2.0.22",
