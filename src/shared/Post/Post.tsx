@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './post.css';
 import ReactDOM from 'react-dom';
+import { CommentForm } from './CommentForm';
 interface IPost {
   onClose?: () => void;
 }
@@ -43,6 +44,7 @@ export function Post(props: IPost) {
           рыбные тексты. Подзаголовок, на берегу?
         </p>
       </div>
+      <CommentForm />
     </div>,
     node
   );
