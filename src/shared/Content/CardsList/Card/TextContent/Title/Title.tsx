@@ -16,7 +16,13 @@ export function Title() {
         Следует отметить, что новая модель организационной деятельности Следует
         отметить, что новая модель организационной деятельности
       </a>
-      {isModalOpened && <Post />}
+      {isModalOpened && (
+        <Post
+          onClose={() => {
+            setIsModalOpened(false);
+          }}
+        />
+      )}
     </h2>
   );
 }
