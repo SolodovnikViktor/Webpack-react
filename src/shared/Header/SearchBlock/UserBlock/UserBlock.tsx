@@ -12,7 +12,7 @@ interface IUserBlockProps {
 export function UserBlock({ avatarSrc, userName }: IUserBlockProps) {
   return (
     <a
-      href="https://www.reddit.com/api/v1/authorize?client_id=1R1PL6ynfjWyGwjI4yxsqA&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read submit identity"
+      href={`https://www.reddit.com/api/v1/authorize?client_id=${process.env.CLIENT_ID}&response_type=code&state=random_string&redirect_uri=http://localhost:3000/auth&duration=permanent&scope=read submit identity`}
       className={styles.userBox}
     >
       <div className={styles.avatarBox}>
@@ -28,8 +28,8 @@ export function UserBlock({ avatarSrc, userName }: IUserBlockProps) {
       </div>
       <div className={styles.userName}>
         <Break size={12} />
-        <Text size={20} color={EColors.black}>
-          {userName}
+        <Text size={20} color={userName ? EColors.black : EColors.grey99}>
+          {userName || 'Аноним'}
         </Text>
       </div>
     </a>

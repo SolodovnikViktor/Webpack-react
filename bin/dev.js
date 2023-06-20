@@ -39,7 +39,7 @@ compiler.run((err) => {
     if (err) {
       console.log('Compilation failed:', err);
     }
-    console.log('Compilation was successfully');
+    console.log('Compilation was successfully (Компиляция прошла успешно)');
   });
   nodemon({
     script: path.resolve(__dirname, '../dist/server/server.js'),

@@ -10,8 +10,9 @@ const app = express();
 app.use('/static', express.static('./dist/client'));
 
 app.get('/', (req, res) => {
-  res.send(indexTemplate(ReactDOM.renderToString(App()), data['access_token']));
+  res.send(indexTemplate(ReactDOM.renderToString(App())));
 });
+
 app.get('/auth', (req, res) => {
   axios
     .post(
@@ -22,12 +23,15 @@ app.get('/auth', (req, res) => {
           username: process.env.CLIENT_ID,
           password: 'EPdBBrro5dv8cB_UmGIMZ1khclI9ZQ',
         },
-        headers: { 'Content-type': 'application/x-www-from-urlencoded' },
+        headers: { 'Content-type': 'application/x-www-form-urlencoded' },
       }
     )
     .then(({ data }) => {
-      res.send(indexTemplate(ReactDOM.renderToString(App())));
-    });
+      res.send(
+        indexTemplate(ReactDOM.renderToString(App()), data['access_token'])
+      );
+    })
+    .catch('ошибка77777777' + console.log);
 });
 
 app.listen(3000, () => {

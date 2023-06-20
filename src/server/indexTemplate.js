@@ -1,5 +1,5 @@
-export const indexTemplate = (content, token) =>
-  `<!DOCTYPE html>
+export const indexTemplate = (content, token) => `
+  <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -14,4 +14,5 @@ export const indexTemplate = (content, token) =>
   <body>
     <div id="react_root">${content}</div>
   </body>
-</html>`;
+</html>
+`;
