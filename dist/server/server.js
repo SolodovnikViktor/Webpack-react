@@ -153,7 +153,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.indexTemplate = void 0;\r\nvar indexTemplate = function (content, token) { return \"\\n  <!DOCTYPE html>\\n<html lang=\\\"ru\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\" />\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\" />\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n    <title>Reddit</title>\\n    <script src=\\\"/static/client.js\\\" type=\\\"application/javascript\\\"></script>\\n    <script>\\n      window.__token__ = '\".concat(token, \"'\\n    </script>\\n  </head>\\n  <body>\\n    <div id=\\\"react_root\\\">\").concat(content, \"</div>\\n  </body>\\n</html>\\n\"); };\r\nexports.indexTemplate = indexTemplate;\r\n\n\n//# sourceURL=webpack:///./src/server/indexTemplate.js?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.indexTemplate = void 0;\r\nvar indexTemplate = function (content, token) { return \"\\n  <!DOCTYPE html>\\n<html lang=\\\"ru\\\">\\n  <head>\\n    <meta charset=\\\"UTF-8\\\" />\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\" />\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\" />\\n    <title>Reddit</title>\\n    <script src=\\\"/static/client.js\\\" type=\\\"application/javascript\\\"></script>\\n    <script>\\n      window.__token__ = '\".concat(token, \"'\\n    </script>\\n  </head>\\n  <body>\\n    <div id=\\\"react_root\\\">\").concat(content, \"</div>\\n    <div id=\\\"modal_root\\\"></div>\\n  </body>\\n</html>\\n\"); };\r\nexports.indexTemplate = indexTemplate;\r\n\n\n//# sourceURL=webpack:///./src/server/indexTemplate.js?");
 
 /***/ }),
 
@@ -385,7 +385,7 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Title = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar title_css_1 = __importDefault(__webpack_require__(/*! ./title.css */ \"./src/shared/Content/CardsList/Card/TextContent/Title/title.css\"));\r\nfunction Title() {\r\n    return (react_1.default.createElement(\"h2\", { className: title_css_1.default.title },\r\n        react_1.default.createElement(\"a\", { href: \"#post-url\", className: title_css_1.default.postLink }, \"\\u0421\\u043B\\u0435\\u0434\\u0443\\u0435\\u0442 \\u043E\\u0442\\u043C\\u0435\\u0442\\u0438\\u0442\\u044C, \\u0447\\u0442\\u043E \\u043D\\u043E\\u0432\\u0430\\u044F \\u043C\\u043E\\u0434\\u0435\\u043B\\u044C \\u043E\\u0440\\u0433\\u0430\\u043D\\u0438\\u0437\\u0430\\u0446\\u0438\\u043E\\u043D\\u043D\\u043E\\u0439 \\u0434\\u0435\\u044F\\u0442\\u0435\\u043B\\u044C\\u043D\\u043E\\u0441\\u0442\\u0438 \\u0421\\u043B\\u0435\\u0434\\u0443\\u0435\\u0442 \\u043E\\u0442\\u043C\\u0435\\u0442\\u0438\\u0442\\u044C, \\u0447\\u0442\\u043E \\u043D\\u043E\\u0432\\u0430\\u044F \\u043C\\u043E\\u0434\\u0435\\u043B\\u044C \\u043E\\u0440\\u0433\\u0430\\u043D\\u0438\\u0437\\u0430\\u0446\\u0438\\u043E\\u043D\\u043D\\u043E\\u0439 \\u0434\\u0435\\u044F\\u0442\\u0435\\u043B\\u044C\\u043D\\u043E\\u0441\\u0442\\u0438\")));\r\n}\r\nexports.Title = Title;\r\n\n\n//# sourceURL=webpack:///./src/shared/Content/CardsList/Card/TextContent/Title/Title.tsx?");
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Title = void 0;\r\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\r\nvar title_css_1 = __importDefault(__webpack_require__(/*! ./title.css */ \"./src/shared/Content/CardsList/Card/TextContent/Title/title.css\"));\r\nvar Post_1 = __webpack_require__(/*! ../../../../../Post */ \"./src/shared/Post/index.ts\");\r\nfunction Title() {\r\n    var _a = (0, react_1.useState)(false), isModalOpened = _a[0], setIsModalOpened = _a[1];\r\n    return (react_1.default.createElement(\"h2\", { className: title_css_1.default.title },\r\n        react_1.default.createElement(\"a\", { href: \"#post-url\", className: title_css_1.default.postLink, onClick: function () {\r\n                setIsModalOpened(true);\r\n            } }, \"\\u0421\\u043B\\u0435\\u0434\\u0443\\u0435\\u0442 \\u043E\\u0442\\u043C\\u0435\\u0442\\u0438\\u0442\\u044C, \\u0447\\u0442\\u043E \\u043D\\u043E\\u0432\\u0430\\u044F \\u043C\\u043E\\u0434\\u0435\\u043B\\u044C \\u043E\\u0440\\u0433\\u0430\\u043D\\u0438\\u0437\\u0430\\u0446\\u0438\\u043E\\u043D\\u043D\\u043E\\u0439 \\u0434\\u0435\\u044F\\u0442\\u0435\\u043B\\u044C\\u043D\\u043E\\u0441\\u0442\\u0438 \\u0421\\u043B\\u0435\\u0434\\u0443\\u0435\\u0442 \\u043E\\u0442\\u043C\\u0435\\u0442\\u0438\\u0442\\u044C, \\u0447\\u0442\\u043E \\u043D\\u043E\\u0432\\u0430\\u044F \\u043C\\u043E\\u0434\\u0435\\u043B\\u044C \\u043E\\u0440\\u0433\\u0430\\u043D\\u0438\\u0437\\u0430\\u0446\\u0438\\u043E\\u043D\\u043D\\u043E\\u0439 \\u0434\\u0435\\u044F\\u0442\\u0435\\u043B\\u044C\\u043D\\u043E\\u0441\\u0442\\u0438\"),\r\n        isModalOpened && react_1.default.createElement(Post_1.Post, null)));\r\n}\r\nexports.Title = Title;\r\n\n\n//# sourceURL=webpack:///./src/shared/Content/CardsList/Card/TextContent/Title/Title.tsx?");
 
 /***/ }),
 
@@ -760,6 +760,41 @@ eval("// Exports\nmodule.exports = {\n\t\"layout\": \"layout__layout--2fANc\"\n}
 
 /***/ }),
 
+/***/ "./src/shared/Post/Post.tsx":
+/*!**********************************!*\
+  !*** ./src/shared/Post/Post.tsx ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Post = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar post_css_1 = __importDefault(__webpack_require__(/*! ./post.css */ \"./src/shared/Post/post.css\"));\r\nvar react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ \"react-dom\"));\r\nfunction Post() {\r\n    var node = document.querySelector('#modal_root');\r\n    if (!node)\r\n        return null;\r\n    return react_dom_1.default.createPortal(react_1.default.createElement(\"div\", { className: post_css_1.default.modal },\r\n        react_1.default.createElement(\"h2\", null, \"\\u0414\\u0430\\u043B\\u0435\\u043A\\u043E-\\u0434\\u0430\\u043B\\u0435\\u043A\\u043E \\u0437\\u0430 \\u0441\\u043B\\u043E\\u0432\\u0435\\u0441\\u043D\\u044B\\u043C\\u0438 \\u0433\\u043E\\u0440\\u0430\\u043C\\u0438 \\u0432 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0435 \\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0438 \\u0441\\u043E\\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0436\\u0438\\u0432\\u0443\\u0442.\"),\r\n        react_1.default.createElement(\"div\", { className: post_css_1.default.content },\r\n            react_1.default.createElement(\"p\", null, \"\\u0414\\u0430\\u043B\\u0435\\u043A\\u043E-\\u0434\\u0430\\u043B\\u0435\\u043A\\u043E \\u0437\\u0430 \\u0441\\u043B\\u043E\\u0432\\u0435\\u0441\\u043D\\u044B\\u043C\\u0438 \\u0433\\u043E\\u0440\\u0430\\u043C\\u0438 \\u0432 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0435 \\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0438 \\u0441\\u043E\\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0436\\u0438\\u0432\\u0443\\u0442 \\u0440\\u044B\\u0431\\u043D\\u044B\\u0435 \\u0442\\u0435\\u043A\\u0441\\u0442\\u044B. \\u041F\\u043E\\u0434\\u0437\\u0430\\u0433\\u043E\\u043B\\u043E\\u0432\\u043E\\u043A, \\u043D\\u0430 \\u0431\\u0435\\u0440\\u0435\\u0433\\u0443?\"),\r\n            react_1.default.createElement(\"p\", null, \"\\u0414\\u0430\\u043B\\u0435\\u043A\\u043E-\\u0434\\u0430\\u043B\\u0435\\u043A\\u043E \\u0437\\u0430 \\u0441\\u043B\\u043E\\u0432\\u0435\\u0441\\u043D\\u044B\\u043C\\u0438 \\u0433\\u043E\\u0440\\u0430\\u043C\\u0438 \\u0432 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0435 \\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0438 \\u0441\\u043E\\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0436\\u0438\\u0432\\u0443\\u0442 \\u0440\\u044B\\u0431\\u043D\\u044B\\u0435 \\u0442\\u0435\\u043A\\u0441\\u0442\\u044B. \\u041F\\u043E\\u0434\\u0437\\u0430\\u0433\\u043E\\u043B\\u043E\\u0432\\u043E\\u043A, \\u043D\\u0430 \\u0431\\u0435\\u0440\\u0435\\u0433\\u0443?\"),\r\n            react_1.default.createElement(\"p\", null, \"\\u0414\\u0430\\u043B\\u0435\\u043A\\u043E-\\u0434\\u0430\\u043B\\u0435\\u043A\\u043E \\u0437\\u0430 \\u0441\\u043B\\u043E\\u0432\\u0435\\u0441\\u043D\\u044B\\u043C\\u0438 \\u0433\\u043E\\u0440\\u0430\\u043C\\u0438 \\u0432 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0435 \\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0438 \\u0441\\u043E\\u0433\\u043B\\u0430\\u0441\\u043D\\u044B\\u0445 \\u0436\\u0438\\u0432\\u0443\\u0442 \\u0440\\u044B\\u0431\\u043D\\u044B\\u0435 \\u0442\\u0435\\u043A\\u0441\\u0442\\u044B. \\u041F\\u043E\\u0434\\u0437\\u0430\\u0433\\u043E\\u043B\\u043E\\u0432\\u043E\\u043A, \\u043D\\u0430 \\u0431\\u0435\\u0440\\u0435\\u0433\\u0443?\"))), node);\r\n}\r\nexports.Post = Post;\r\n\n\n//# sourceURL=webpack:///./src/shared/Post/Post.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/index.ts":
+/*!**********************************!*\
+  !*** ./src/shared/Post/index.ts ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(__webpack_require__(/*! ./Post */ \"./src/shared/Post/Post.tsx\"), exports);\r\n\n\n//# sourceURL=webpack:///./src/shared/Post/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Post/post.css":
+/*!**********************************!*\
+  !*** ./src/shared/Post/post.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"modal\": \"post__modal--yRo-c\",\n\t\"content\": \"post__content--2gFMc\",\n\t\"close\": \"post__close--1HSqz\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Post/post.css?");
+
+/***/ }),
+
 /***/ "./src/shared/Text/Text.tsx":
 /*!**********************************!*\
   !*** ./src/shared/Text/Text.tsx ***!
@@ -860,6 +895,17 @@ eval("module.exports = require(\"express\");\n\n//# sourceURL=webpack:///externa
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack:///external_%22react%22?");
+
+/***/ }),
+
+/***/ "react-dom":
+/*!****************************!*\
+  !*** external "react-dom" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require(\"react-dom\");\n\n//# sourceURL=webpack:///external_%22react-dom%22?");
 
 /***/ }),
 

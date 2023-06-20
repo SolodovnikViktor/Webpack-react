@@ -6,7 +6,7 @@
   z-index: 1000;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
   border-radius: 7px;
   min-width: 200px;
@@ -25,5 +25,5 @@
   width: 40px;
   height: 40px;
   margin: -24px;
-  color: #000
+  color: #000;
 }
